@@ -22,7 +22,7 @@ class Login extends Component {
         password
       })
       .catch(err => alert('Invalid Login Credentials'));
-  };
+  }; //
 
   onChange = e => this.setState({ [e.target.name]: e.target.value });
 
