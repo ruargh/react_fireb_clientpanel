@@ -40,10 +40,10 @@ class Login extends Component {
               ) : null}
               <h1 className="text-center pb-4 pt-3">
                 <span className="text-primary">
-                  <i className="fas fa-lock"> Login</i>
+                  <i className="fas fa-lock" /> Login
                 </span>
               </h1>
-              <form>
+              <form onSubmit={this.onSubmit}>
                 <div className="form-group">
                   <label htmlFor="email">Email</label>
                   <input
@@ -81,7 +81,9 @@ class Login extends Component {
 }
 
 Login.propTypes = {
-  firebase: PropTypes.object.isRequired
+  firebase: PropTypes.object.isRequired,
+  notify: PropTypes.object.isRequired,
+  notifyUser: PropTypes.func.isRequired
 };
 
 export default compose(

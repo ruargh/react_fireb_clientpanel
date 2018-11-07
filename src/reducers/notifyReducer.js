@@ -1,5 +1,4 @@
 import { NOTIFY_USER } from '../actions/types';
-import { isNullOrUndefined } from 'util';
 
 const initialState = {
   message: null,
